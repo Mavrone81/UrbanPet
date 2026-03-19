@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Werkz & Memorial Services</title>
+    <title>Enshrine | Pet Afterlife Services & Columbarium</title>
+    <meta name="description" content="Enshrine delivers dignified afterlife services to your dearly departed pets. First and Only Freehold Pet Columbarium in Singapore.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -30,237 +31,154 @@
         .delay-200 { animation-delay: 200ms; }
         .delay-300 { animation-delay: 300ms; }
         
-        /* Glassmorphism utility */
         .glass {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(252, 251, 247, 0.85);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 1px solid rgba(203, 163, 101, 0.2);
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #e6c891 0%, #cba365 50%, #b08d56 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+<body class="bg-[#fcfbf7] text-slate-800 antialiased overflow-x-hidden">
 
     <!-- Navbar -->
     <nav class="fixed w-full z-50 glass shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">U</div>
-                    <span class="font-bold text-2xl text-slate-900 tracking-tight">Urban Werkz</span>
+                <div class="flex-shrink-0 flex items-center space-x-3">
+                    <div class="w-10 h-10 border border-[#cba365] rounded-full flex items-center justify-center text-[#cba365]">
+                        <i class="fa-solid fa-feather-pointed text-lg"></i>
+                    </div>
+                    <span class="font-serif text-2xl text-slate-900 tracking-tight font-semibold">ENSHRINE</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#why-choose" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Why Us</a>
-                    <a href="#how-it-works" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">How it Works</a>
-                    <a href="#memorial" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Memorial Services</a>
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-[#cba365] font-medium transition-colors">Our Approach</a>
+                    <a href="#services" class="text-slate-600 hover:text-[#cba365] font-medium transition-colors">Services</a>
+                    <a href="#columbarium" class="text-slate-600 hover:text-[#cba365] font-medium transition-colors">Columbarium</a>
+                    <a href="#contact" class="text-slate-600 hover:text-[#cba365] font-medium transition-colors">Contact</a>
                 </div>
                 <div class="hidden md:flex">
-                    <a href="#quote" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-0.5">Get Quote</a>
+                    <a href="#contact" class="bg-[#1a202c] hover:bg-[#2d3748] text-[#fcfbf7] px-6 py-2.5 font-serif transition-colors rounded">Inquire Now</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section (Implicit from the rest of the content) -->
-    <section class="pt-32 pb-16 bg-gradient-to-br from-slate-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">Logistics Delivered <span class="text-blue-600">Perfectly</span></h1>
-            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Fast, reliable, and transparent delivery solutions for businesses and individuals.</p>
+    <!-- Hero Section -->
+    <section class="pt-40 pb-24 bg-[#1a202c] text-[#fcfbf7] relative">
+        <div class="absolute inset-0 bg-[#1a202c] opacity-90"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517726715694-fbabe7609204?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 fade-in-up">
+            <h1 class="text-5xl md:text-7xl font-serif mb-6 text-[#fbf8f1] leading-tight">A Dignified Farewell<br><span class="gold-gradient-text italic">For Your Beloved</span></h1>
+            <p class="text-xl text-slate-300 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+                Enshrine provides a one-stop Pets Afterlife Service from cremation and sea burial to columbarium and religious services. We hold the space for you to grieve and honor your unbroken bond.
+            </p>
+            <div class="w-24 h-0.5 bg-[#cba365] mx-auto mt-8 mb-8"></div>
         </div>
     </section>
 
-    <!-- Why Choose Urban Werkz -->
-    <section id="why-choose" class="py-20 bg-white">
+    <!-- Compassionate Care / Overview -->
+    <section id="about" class="py-20 bg-[#fcfbf7]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-up">
-                <h2 class="text-4xl font-bold text-slate-900 mb-4">Why Choose Urban Werkz</h2>
-                <p class="text-xl text-slate-500">Trusted by thousands of businesses and individuals</p>
+                <h2 class="text-4xl font-serif text-[#1a202c] mb-4">One-Stop Pets Afterlife Service</h2>
+                <div class="w-16 h-0.5 bg-[#cba365] mx-auto mb-6"></div>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">We understand how distressing it is to lose a companion. Let Enshrine handle all arrangements with the utmost respect and grace.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Feature 1 -->
-                <div class="bg-slate-50 rounded-2xl p-6 flex items-start space-x-4 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up delay-100 border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
-                        <i class="fa-solid fa-location-dot"></i>
+                <div class="bg-white rounded-lg p-8 text-center border border-[#eae0d2] shadow-sm hover:shadow-md transition-shadow fade-in-up delay-100">
+                    <div class="w-14 h-14 bg-[#fcfbf7] border border-[#cba365] text-[#cba365] rounded-full flex items-center justify-center text-xl mx-auto mb-6">
+                        <i class="fa-solid fa-building"></i>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-lg">GPS Tracked</h4>
-                        <p class="text-slate-500 text-sm mt-1">All Deliveries</p>
-                    </div>
+                    <h4 class="font-serif text-[#1a202c] text-xl mb-3">Freehold Premise</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">The First & Only Freehold Pet Columbarium in Singapore, ensuring a permanent resting place.</p>
                 </div>
                 
                 <!-- Feature 2 -->
-                <div class="bg-slate-50 rounded-2xl p-6 flex items-start space-x-4 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up delay-200 border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
-                        <i class="fa-solid fa-shield-halved"></i>
+                <div class="bg-white rounded-lg p-8 text-center border border-[#eae0d2] shadow-sm hover:shadow-md transition-shadow fade-in-up delay-200">
+                    <div class="w-14 h-14 bg-[#fcfbf7] border border-[#cba365] text-[#cba365] rounded-full flex items-center justify-center text-xl mx-auto mb-6">
+                        <i class="fa-solid fa-hands-praying"></i>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-lg">Fully Insured</h4>
-                        <p class="text-slate-500 text-sm mt-1">Up to $5,000</p>
-                    </div>
+                    <h4 class="font-serif text-[#1a202c] text-xl mb-3">Religious Services</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Tailored rituals available for Buddhist, Taoist, Christian, and Catholic faiths.</p>
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="bg-slate-50 rounded-2xl p-6 flex items-start space-x-4 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up delay-300 border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
-                        <i class="fa-solid fa-bell"></i>
+                <div class="bg-white rounded-lg p-8 text-center border border-[#eae0d2] shadow-sm hover:shadow-md transition-shadow fade-in-up delay-300">
+                    <div class="w-14 h-14 bg-[#fcfbf7] border border-[#cba365] text-[#cba365] rounded-full flex items-center justify-center text-xl mx-auto mb-6">
+                        <i class="fa-solid fa-clock"></i>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-lg">Real-Time Updates</h4>
-                        <p class="text-slate-500 text-sm mt-1">SMS + App</p>
-                    </div>
+                    <h4 class="font-serif text-[#1a202c] text-xl mb-3">24-Hour Access</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Visit your beloved pet at any time comfortably with all-round CCTV monitoring.</p>
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="bg-slate-50 rounded-2xl p-6 flex items-start space-x-4 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up delay-300 border border-slate-100">
-                    <div class="flex space-x-1 text-orange-400 text-lg mt-1 shrink-0">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="bg-white rounded-lg p-8 text-center border border-[#eae0d2] shadow-sm hover:shadow-md transition-shadow fade-in-up delay-300">
+                    <div class="w-14 h-14 bg-[#fcfbf7] border border-[#cba365] text-[#cba365] rounded-full flex items-center justify-center text-xl mx-auto mb-6">
+                        <i class="fa-solid fa-paw"></i>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-lg">4.8 Rating</h4>
-                        <p class="text-slate-500 text-sm mt-1">10,000+ Deliveries</p>
-                    </div>
+                    <h4 class="font-serif text-[#1a202c] text-xl mb-3">Relaxation Area</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">A dedicated pets' play area allows you to bring along living pets during visits.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="py-20 bg-slate-50">
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white border-y border-[#eae0d2]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-up">
-                <h2 class="text-4xl font-bold text-slate-900 mb-4">How It Works</h2>
-                <p class="text-xl text-slate-500">Simple, fast, and transparent delivery process</p>
+                <h2 class="text-4xl font-serif text-[#1a202c] mb-4">Afterlife Services</h2>
+                <div class="w-16 h-0.5 bg-[#cba365] mx-auto mb-6"></div>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Comprehensive solutions catering to every family's unique needs.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center relative">
-                <!-- Decorative Line -->
-                <div class="hidden md:block absolute top-10 left-[15%] right-[15%] h-0.5 bg-orange-100 -z-10"></div>
-                
-                <!-- Step 1 -->
-                <div class="fade-in-up delay-100">
-                    <div class="w-20 h-20 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-sm border border-orange-100">
-                        1
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="fade-in-up delay-100 group">
+                    <div class="relative overflow-hidden mb-6 rounded-lg bg-slate-100 aspect-w-4 aspect-h-3">
+                        <div class="absolute inset-0 bg-[#1a202c] opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                        <img src="https://images.unsplash.com/photo-1599839619722-397dbb1d03bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Private Cremation" class="object-cover w-full h-56 grayscale group-hover:grayscale-0 transition-all duration-500">
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Book Online or Call</h3>
-                    <p class="text-slate-500 leading-relaxed">Get instant quote and schedule pickup in minutes</p>
+                    <h3 class="text-xl font-serif text-[#1a202c] mb-2">Private Cremation</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Bid your final farewell privately. Includes pickup, floral arrangements, complimentary urn, cremation certificate, and optional bone picking.</p>
                 </div>
                 
-                <!-- Step 2 -->
-                <div class="fade-in-up delay-200">
-                    <div class="w-20 h-20 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-sm border border-orange-100">
-                        2
+                <!-- Service 2 -->
+                <div class="fade-in-up delay-200 group">
+                    <div class="relative overflow-hidden mb-6 rounded-lg bg-slate-100 aspect-w-4 aspect-h-3">
+                        <div class="absolute inset-0 bg-[#1a202c] opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                        <img src="https://images.unsplash.com/photo-1596796985012-78d10dceb1a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Celebrant Services" class="object-cover w-full h-56 grayscale group-hover:grayscale-0 transition-all duration-500">
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Track in Real-Time</h3>
-                    <p class="text-slate-500 leading-relaxed">Follow your delivery with live GPS tracking and ETA updates</p>
+                    <h3 class="text-xl font-serif text-[#1a202c] mb-2">Celebrant & Religion</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">A 30-minute prayer and eulogy session encompassing Final Touch, Tribute, and Final Farewell, accompanied by a custom video montage.</p>
                 </div>
                 
-                <!-- Step 3 -->
-                <div class="fade-in-up delay-300">
-                    <div class="w-20 h-20 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-sm border border-orange-100">
-                        3
+                <!-- Service 3 -->
+                <div class="fade-in-up delay-300 group">
+                    <div class="relative overflow-hidden mb-6 rounded-lg bg-slate-100 aspect-w-4 aspect-h-3">
+                        <div class="absolute inset-0 bg-[#1a202c] opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                        <img src="https://images.unsplash.com/photo-1520638069678-7bf0aef4f0aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sea Scattering" class="object-cover w-full h-56 grayscale group-hover:grayscale-0 transition-all duration-500">
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Delivered & Confirmed</h3>
-                    <p class="text-slate-500 leading-relaxed">Get photo proof and digital signature upon delivery</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Perfect For -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in-up">
-                <h2 class="text-4xl font-bold text-slate-900 mb-4">Perfect For</h2>
-                <p class="text-xl text-slate-500">Serving diverse delivery needs across industries</p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <!-- Item 1 -->
-                <div class="text-center fade-in-up delay-100 group">
-                    <div class="w-24 h-24 bg-slate-100 text-slate-700 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">E-Commerce</h4>
-                    <p class="text-slate-500 text-sm">Fast fulfillment</p>
-                </div>
-                
-                <!-- Item 2 -->
-                <div class="text-center fade-in-up delay-200 group">
-                    <div class="w-24 h-24 bg-slate-100 text-slate-700 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
-                        <i class="fa-solid fa-cube"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Restaurants</h4>
-                    <p class="text-slate-500 text-sm">Food delivery</p>
+                    <h3 class="text-xl font-serif text-[#1a202c] mb-2">Private Sea Scattering</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Return a pet's cremains to nature gracefully. Includes a chartered boat, an accompanying advisor, and participation of a religious leader.</p>
                 </div>
 
-                <!-- Item 3 -->
-                <div class="text-center fade-in-up delay-300 group">
-                    <div class="w-24 h-24 bg-slate-100 text-slate-700 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
-                        <i class="fa-solid fa-capsules"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Pharmacies</h4>
-                    <p class="text-slate-500 text-sm">Prescription delivery</p>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="text-center fade-in-up delay-300 group">
-                    <div class="w-24 h-24 bg-slate-100 text-slate-700 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
-                        <i class="fa-solid fa-file-lines"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Business</h4>
-                    <p class="text-slate-500 text-sm">Document courier</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in-up">
-                <h2 class="text-4xl font-bold text-slate-900 mb-4">What Our Customers Say</h2>
-                <p class="text-xl text-slate-500">Real feedback from businesses and individuals</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Review 1 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 fade-in-up delay-100">
-                    <div class="flex space-x-1 text-orange-400 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-600 text-lg leading-relaxed mb-8">"Same-day delivery saved us when we needed urgent documents delivered across town. Tracking was spot-on!"</p>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-lg">JP</div>
-                        <div>
-                            <h4 class="font-bold text-slate-900">James Perez</h4>
-                            <p class="text-slate-500 text-sm">Corporate Client</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 fade-in-up delay-200">
-                    <div class="flex space-x-1 text-orange-400 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-600 text-lg leading-relaxed mb-8">"Fleet as a Service transformed our restaurant delivery. No more managing drivers - Urban Werkz handles everything! Highly recommend!"</p>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-lg">SL</div>
-                        <div>
-                            <h4 class="font-bold text-slate-900">Sarah Lim</h4>
-                            <p class="text-slate-500 text-sm">E-Commerce Business</p>
+                <!-- Service 4 -->
+                <div class="fade-in-up delay-300 group">
+                    <div class="relative overflow-hidden mb-6 rounded-lg bg-slate-100 aspect-w-4 aspect-h-3 flex items-center justify-center p-6 border-2 border-dashed border-[#cba365] bg-[#fffdfa]">
+                        <div class="text-center">
+                            <i class="fa-solid fa-gift text-4xl text-[#cba365] mb-4"></i>
+                            <h3 class="text-xl font-serif text-[#1a202c] mb-2">Complete Package</h3>
+                            <p class="text-slate-500 text-xs leading-relaxed">Comprehensive all-in-one bundle at a discounted rate covering transfer, cremation, celebrant, and niche.</p>
                         </div>
                     </div>
                 </div>
@@ -268,57 +186,38 @@
         </div>
     </section>
 
-    <!-- Ready To Ship -->
-    <section id="quote" class="py-24 bg-[#2b5c8f] text-white overflow-hidden relative">
-        <!-- Decorative bg -->
-        <div class="absolute inset-0 bg-blue-900 opacity-20 mix-blend-multiply"></div>
-        
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10 fade-in-up">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Ship with Urban Werkz?</h2>
-            <p class="text-xl text-blue-100 mb-10">Get instant quotes and book your delivery in minutes</p>
-            
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
-                <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-orange-500/50 transform hover:-translate-y-1 w-full sm:w-auto text-center">
-                    Get Instant Quote
-                </a>
-                <a href="tel:+6587654321" class="bg-white text-slate-800 hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl w-full sm:w-auto text-center flex items-center justify-center">
-                    <i class="fa-solid fa-phone mr-3 text-blue-600"></i>
-                    +65 8765 4321
-                </a>
-            </div>
-            
-            <p class="text-sm text-blue-100 flex items-center justify-center opacity-80">
-                <i class="fa-regular fa-clock mr-2"></i> Average pickup time: 30 minutes
-            </p>
-        </div>
-    </section>
-
-    <!-- MEMORIAL SECTION (Dark Theme) -->
-    <section id="memorial" class="py-24 bg-[#1a202c] text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-5xl md:text-6xl font-serif mb-6 text-[#fbf8f1]">Words of Comfort</h2>
-            <div class="w-16 h-0.5 bg-[#cba365] mx-auto mb-16"></div>
-            
-            <div class="space-y-20">
-                <!-- Memorial Quote 1 -->
-                <div class="fade-in-up delay-100">
-                    <div class="text-[#cba365] text-3xl mb-6 font-serif">"</div>
-                    <p class="font-serif text-xl md:text-2xl italic text-[#e2e8f0] leading-relaxed mb-8 max-w-3xl mx-auto">
-                        The care and dignity shown during this difficult time brought us immeasurable comfort. The memorial garden is a beautiful, peaceful place where we can visit and remember our dear Bailey. Thank you for honoring her memory so beautifully.
+    <!-- Columbarium Section (Dark Theme) -->
+    <section id="columbarium" class="py-24 bg-[#1a202c] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 fade-in-up">
+                    <div class="text-[#cba365] font-semibold tracking-wider uppercase text-sm mb-3">Enshrine Exclusives</div>
+                    <h2 class="text-4xl md:text-5xl font-serif mb-6 text-[#fbf8f1] leading-tight">The First & Only Freehold Pet Columbarium in Singapore</h2>
+                    <div class="w-16 h-0.5 bg-[#cba365] mb-8"></div>
+                    <p class="text-lg text-slate-300 mb-6 font-light leading-relaxed">
+                        Located centrally at <strong>47 Lorong 16 Geylang, Singapore</strong>. This fully air-conditioned, four-story building consists of more than 10,000 niches, offering a quiet, comfortable, and elegant ambiance.
                     </p>
-                    <div class="text-[#cba365] text-sm uppercase tracking-widest font-semibold">
-                        — Margaret & Thomas Henderson
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10">
+                        <div>
+                            <h4 class="text-xl font-serif text-[#e6c891] mb-2">Single Niche</h4>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Accommodates one pet behind a transparent cover. Includes a custom bamboo urn engraved with your pet's photo, name, and dates. Ensure visual connection and lasting solace.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-serif text-[#e6c891] mb-2">Family Pet Niche</h4>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Accommodates up to 32 pets with no divider, allowing your entire furry family to stay together in the afterlife. Includes a personalized family tribute plaque.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Memorial Quote 2 -->
-                <div class="fade-in-up delay-200">
-                    <div class="text-[#cba365] text-3xl mb-6 font-serif">"</div>
-                    <p class="font-serif text-xl md:text-2xl italic text-[#e2e8f0] leading-relaxed mb-8 max-w-3xl mx-auto">
-                        Creating a lasting memorial for our beloved Max was important to us, and the custom monument exceeded all expectations. The craftsmanship is exquisite, and it perfectly captures his spirit. A truly fitting tribute.
-                    </p>
-                    <div class="text-[#cba365] text-sm uppercase tracking-widest font-semibold">
-                        — The Richardson Family
+                
+                <div class="w-full lg:w-1/2 fade-in-up delay-200">
+                    <div class="relative rounded-lg overflow-hidden border border-[#cba365]/30">
+                        <img src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Beautiful Columbarium Architecture" class="w-full h-auto object-cover opacity-80 mix-blend-lighten">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1a202c] via-transparent to-transparent"></div>
                     </div>
                 </div>
             </div>
@@ -326,55 +225,84 @@
     </section>
 
     <!-- Begin Your Memorial Form -->
-    <section class="py-24 bg-[#fcfbf7]">
+    <section id="contact" class="py-24 bg-[#fcfbf7]">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 fade-in-up">
-                <h2 class="text-5xl font-serif text-[#1a202c] mb-4">Begin Your Memorial</h2>
+                <h2 class="text-4xl md:text-5xl font-serif text-[#1a202c] mb-4">Inquire About Arrangements</h2>
                 <p class="text-lg text-slate-600 font-serif italic">We are here to guide you with compassion and care</p>
             </div>
             <div class="w-16 h-0.5 bg-[#cba365] mx-auto mb-12"></div>
 
-            <div class="bg-white p-8 md:p-12 border border-[#eae0d2] shadow-xl shadow-[#eae0d2]/50 fade-in-up delay-200 relative">
+            <div class="bg-white p-8 md:p-12 border border-[#eae0d2] shadow-xl shadow-[#eae0d2]/30 fade-in-up delay-200 relative rounded-sm">
                 <!-- Frame Decoration -->
-                <div class="absolute inset-2 border border-[#f4ecd8] pointer-events-none"></div>
+                <div class="absolute inset-2 border border-[#f4ecd8] pointer-events-none rounded-sm"></div>
                 
                 <form class="space-y-6 relative z-10">
-                    <div>
-                        <label class="block text-slate-800 font-serif mb-2 text-lg">Your Name</label>
-                        <input type="text" placeholder="Enter your name" class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-serif placeholder:font-sans placeholder-slate-400">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-slate-800 font-serif mb-2 text-lg">Your Name</label>
+                            <input type="text" placeholder="Enter your name" class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-serif placeholder:font-sans placeholder-slate-400">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-slate-800 font-serif mb-2 text-lg">Email Address</label>
+                            <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-serif placeholder:font-sans placeholder-slate-400">
+                        </div>
                     </div>
-                    
-                    <div>
-                        <label class="block text-slate-800 font-serif mb-2 text-lg">Email Address</label>
-                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-serif placeholder:font-sans placeholder-slate-400">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-slate-800 font-serif mb-2 text-lg">Phone Number</label>
+                            <input type="tel" placeholder="Your phone number" class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-serif placeholder:font-sans placeholder-slate-400">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-slate-800 font-serif mb-2 text-lg">Interested Service</label>
+                            <select class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-sans text-slate-600">
+                                <option>Comprehensive Afterlife Package</option>
+                                <option>Private Cremation</option>
+                                <option>Niche Booking (Single/Family)</option>
+                                <option>Private Sea Scattering</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div>
-                        <label class="block text-slate-800 font-serif mb-2 text-lg">Your Pet's Name</label>
-                        <input type="text" placeholder="Enter your pet's name" class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-serif placeholder:font-sans placeholder-slate-400">
-                    </div>
-
-                    <div>
-                        <label class="block text-slate-800 font-serif mb-2 text-lg">Message</label>
-                        <textarea rows="4" placeholder="Share your thoughts or questions with us" class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-serif placeholder:font-sans placeholder-slate-400 resize-none"></textarea>
+                        <label class="block text-slate-800 font-serif mb-2 text-lg">Message / Requirements</label>
+                        <textarea rows="4" placeholder="Share your specific preferences or ask any questions..." class="w-full px-4 py-3 bg-[#fcfbf7] border border-[#e2d8c3] focus:outline-none focus:border-[#cba365] focus:ring-1 focus:ring-[#cba365] transition-colors font-serif placeholder:font-sans placeholder-slate-400 resize-none"></textarea>
                     </div>
 
                     <div class="pt-4 text-center">
-                        <button type="button" class="bg-[#1a202c] hover:bg-[#2d3748] text-white px-10 py-4 font-serif text-lg tracking-wide transition-colors duration-300 w-full md:w-auto min-w-[200px]">Send Message</button>
+                        <button type="button" class="bg-[#1a202c] hover:bg-[#2d3748] text-[#fcfbf7] px-10 py-4 font-serif text-lg tracking-wide transition-colors duration-300 w-full md:w-auto min-w-[200px] rounded">Submit Inquiry</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Logistics Footer -->
-    <footer class="bg-[#1e2330] py-8 text-center border-t border-slate-800">
-        <p class="text-slate-400 text-sm">
-            © 2026 Urban Werkz Logistics. Fast, Tracked, Reliable. All rights reserved.
-        </p>
+    <!-- Footer -->
+    <footer class="bg-[#151a23] py-16 text-center text-slate-400 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex justify-center items-center space-x-3 mb-6 opacity-80">
+                <i class="fa-solid fa-feather-pointed text-[#cba365] text-2xl"></i>
+            </div>
+            <h3 class="font-serif text-3xl text-[#fcfbf7] mb-4 tracking-wide font-semibold">ENSHRINE</h3>
+            <p class="max-w-md mx-auto mb-4 font-light text-sm">
+                47 Lorong 16 Geylang, Singapore<br>
+                The First and Only Freehold Pet Columbarium
+            </p>
+            <div class="w-12 h-px bg-slate-700 mx-auto mb-6"></div>
+            <div class="flex justify-center space-x-6 mb-10 text-[#cba365]">
+                <a href="#" class="hover:text-white transition-colors text-xl"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition-colors text-xl"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="text-xs uppercase tracking-widest font-semibold pt-4 opacity-50">
+                © 2026 Enshrine Pets Afterlife Services. All rights reserved.
+            </p>
+        </div>
     </footer>
 
-    <!-- Script to handle simple scroll animation if needed -->
+    <!-- Script to handle simple scroll animation -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const observer = new IntersectionObserver((entries) => {
