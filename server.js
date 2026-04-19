@@ -15,10 +15,15 @@ app.get('/inquiry', (req, res) => {
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
         user: 'Urbanwerkzsg@gmail.com',
         pass: 'huathuathuat'
-    }
+    },
+    logger: true,
+    debug: true
 });
 
 app.post('/api/contact', async (req, res) => {
@@ -39,7 +44,9 @@ app.post('/api/contact', async (req, res) => {
         await transporter.sendMail(mailOptions);
         res.status(200).json({ success: true, message: "Inquiry sent successfully!" });
     } catch (error) {
-        console.error('Error sending email:', error);
+        console.error('--- EMAIL SENDING ERROR ---');
+        console.error(error);
+        console.error('---------------------------');
         res.status(500).json({ error: "Failed to send email. Please try again later." });
     }
 });
